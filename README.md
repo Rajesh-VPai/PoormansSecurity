@@ -3,13 +3,13 @@
 The Random Number Java Program is a Differential PRNG(pseudorandom number generator). It uses the simple ODE(ordinary differential equation )F(x)==F’(x) for finding the new Random Number State (Xn+1) from the old or initial state (Xn). At the high level , it uses the equation:
 Xn_LCG = (Xn_LCG + ConfuseValue + DiffusionValue - SupportValue + SurprisalValue) % (Modulus);
 
-At the low level it uses the entropy equation rpovided along with the seed entropy variables a,b,c,d to generate the new state Xn+1.
+At the low level it uses the entropy equation povided along with the seed entropy variables a,b,c,d to generate the new state Xn+1.
 Xnplus1 = (long) ((LCGexpValue2.eval() + x) % (Modulus ));
 where LCGexpValue2.eval() is F’(x) value
 
 #. Packages
 a)	Calculus :Expression Lambda, Differentiation Lambda, Integration Lambda, etc.
-b)	TestHarness: Test Suite for Calculus (including Regression Tests with Anwsers)
+b)	TestHarness: Test Suite for Calculus (including Regression Tests with Answers)
 c)	DOETest : Automated Test Suite for RandomNumber ( using Taguchi Design of Expriments and associated Config Files in data\DOESelfTestConfig )
 d)	RandomNumber:Code for 2 RNGs:
 i.	UserResearchStudy
