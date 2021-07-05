@@ -29,14 +29,14 @@ f.	Xn_Series4:y=mx+c where all m, x, ‘+’ and c are randomly varied and to st
 3.	To demonstrate the power of Java Calculus through and real life application
 
 
-#Forming the Project:
+#Forming the Project Folder:
 i.	Create data directory
 1)	Create DOESelfTestConfig with the files:
 a.	DOEConfig000  :No Extension
 b.	DOEConfigDefault:No Extension
 c.	DOESelfTestConfig:No Extension
-ii.	Create logs directory
-iii.	In src Folder:
+ii.	Create logs directory.
+	n src Folder:
 1)	Create Calculus Package with below files (10 files)
 a.	ConsoleColors.java
 b.	DiffrIntegrSep.java
