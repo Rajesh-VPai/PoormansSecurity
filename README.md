@@ -1,87 +1,32 @@
-# Random Number 
-#.	INTRODUCTION
-The Random Number Java Program is a Differential PRNG(pseudorandom number generator). It uses the simple ODE(ordinary differential equation )F(x)==F’(x) for finding the new Random Number State (Xn+1) from the old or initial state (Xn). At the high level , it uses the equation:
-Xn_LCG = (Xn_LCG + ConfuseValue + DiffusionValue - SupportValue + SurprisalValue) % (Modulus);
+# Poorman's Security 
+#.	    a) INTRODUCTION
+PoorMan's Security is an Encryption Decryption Algorithm. It provides rudimentary enhancements over RSA PKI Encryption. It is a JavaCalculus Application that heavily uses JavaCalculus Maths Package for encryption and Decryption. The PoorMan’s Security Algorithm has been designed and developed to demonstate the Power of JavaCalculus. 
 
-At the low level it uses the entropy equation povided along with the seed entropy variables a,b,c,d to generate the new state Xn+1.
-Xnplus1 = (long) ((LCGexpValue2.eval() + x) % (Modulus ));
-where LCGexpValue2.eval() is F’(x) value
+While RSA PKI uses a static fixed Equation, PoorMan's Security uses simple configurable Equations that serve as stages of Encryption and Decryption. The whole security is based on the security OR secrecy of the Private Key only (like RSA) . While the Equations used may be kept secret, the Equation to Values Mapping is hidden in the JavaCalculus Package and provides the second layer of Security. 
 
-#. Packages
-a)	Calculus :Expression Lambda, Differentiation Lambda, Integration Lambda, etc.
-b)	TestHarness: Test Suite for Calculus (including Regression Tests with Answers)
-c)	DOETest : Automated Test Suite for RandomNumber ( using Taguchi Design of Expriments and associated Config Files in data\DOESelfTestConfig )
-d)	RandomNumber:Code for 2 RNGs:
-i.	UserResearchStudy
-ii.	RNGDiff
-e)	Plot: Pixel Plotter for RNGDiff based on javax.swing
+The PoorMan’s Security Algorithm provides all the code and libraries used so there is no code used that is not under the User’s control unlike RSA PKI. PoorMan’s Security Algorithm only needs Java 8 (for running and Development) and the IDE (for development alone).
+As all the code used is under the User Control, User can use PoorMan’s Security Algorithm to develop / Research his or her RSA like Security Software with only the equations being changed.
 
-#High Level Design:
- The purpose of the Java DPRNG is :
-1.	To address the Industry needs of a Random Number Generator as there are few Java Random Number Generators available on the Internet.
-2.	To help the University Freshman in Advanced College Courses get answers to simple design decisions through the Study Functions :
-a.	//StudyRandomValues(i); : Sample code for comparision of mathematical operations (+,-, *, /) on 2 different Random Values in a Series
-b.	//StudyLogicValues(i); : Sample code for comparision of 2 Random Values in a Series (usage of >, < , == operators with 2 different random values) as well as comparing 1 random variable with a constant(64)
-c.	//StudyXORLogicValues(i); : Sample code for XOR Logic of 2 Random Values in a Series (usage of p=> q i.e p implies q)
-d.	//StudyRandomLinearEqns(i); : Sample code for 2 Random Values in a linear equations and Constants
-e.	//StudyRandomSecurity(i); : Sample code for 2 Random Values in Encryption and Decryption)
-f.	Xn_Series4:y=mx+c where all m, x, ‘+’ and c are randomly varied and to study if this can be guessed in the Xn_Series4 Series Object
-3.	To demonstrate the power of Java Calculus through and real life application
+For further reference, an implementation of Julius Caeser Cipher is included in the Java Package.( JuliusCaeserEncrypt && JuliusCaeserDecrypt in SecurityTestHarness File). 
+The function SimpleKeySensitivityEncrypt && SimpleKeySensitivityDecrypt is the whole PoorMan’s Security Algorithm.
+
+CAUTION: As PoorMan’s Security Algorithm is a new software, Users and user community are advised caution to Test and Check thoroughly and only then use PoorMan’s Security Algorithm in PRODUCTION.
+The purpose of the release to public domain is the gather invaluable user feedback and comments on the software.
+
+2. Packages
+    a) JavaCalculus
+    b) RandomNumber
+    c) Security
+    d) Log4j.jar
+
+3. RUNNING THE PROGRAMS
+Using Netbeans 8.2, 
+    1) Open PoorManSecurity.java. 
+    2) Right Click
+    3) Select Run File
 
 
 #Forming the Project Folder:
 i.	Create data directory
-1)	Create DOESelfTestConfig with the files:
-a.	DOEConfig000  :No Extension
-b.	DOEConfigDefault:No Extension
-c.	DOESelfTestConfig:No Extension
 ii.	Create logs directory.
-	n src Folder:
-1)	Create Calculus Package with below files (10 files)
-a.	ConsoleColors.java
-b.	DiffrIntegrSep.java
-c.	FuncInvSep.java
-d.	MathematicalTestHarness.java
-e.	MathsContxtLAv.java
-f.	RNGDiff.java
-g.	SimpleAlgebraSep.java
-h.	SubsStrSep.java
-i.	TestHarness.java
-j.	Usage.java
-2)	Create RandomNumber Package with below files (9 files)
-a.	Rand_Pool.java
-b.	RandomFactorialLCGDyDx.java
-c.	RandomNumber.java
-d.	RandomSeries.java
-e.	RandomSimpleLCG.java
-f.	RNGDiff.java
-g.	SSCCE.java
-h.	UserResearchStudy.java
-i.	XORRandom.java
-3)	Create DOETest Package with below files (3 files)
-a.	HDOEDefine.java
-b.	TestHarnessDOE.java
-c.	UsageDOE.java
-4)	Create Plot Package with below files (2 files)
-a.	Screen.java
-b.	SSCCE.java
-5)	Create TestHarness Package with below files (12 files)
-a.	TestHarnessAlgebra.java
-b.	TestHarnessCoefficients.java
-c.	TestHarnessExpression.java
-d.	TestHarnessFInverse.java
-e.	TestHarnessIndConstant.java
-f.	TestHarnessInfinityNaN.java
-g.	TestHarnessIsolation.java
-h.	TestHarnessNames.java
-i.	TestHarnessParentheses.java
-j.	TestHarnessPredicate.java
-k.	TestHarnessSignedX.java
-l.	TestHarnessUnitTest.java
-6)	Add log4j.properties to src file
-
-#RUNNING THE PROGRAMS
-Using Netbeans 8.2, 
-1)	Open UserResearchStudy.java. 
-2)	Right Click
-3)	Select Run File
+iii.    Unzip Poorman's Security.zip. This creates the entire folder and package structure and populates the files.
