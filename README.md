@@ -10,9 +10,11 @@ As all the code used is under the User Control, User can use PoorMan’s Securit
 For further reference, an implementation of Julius Caeser Cipher is included in the Java Package.( JuliusCaeserEncrypt && JuliusCaeserDecrypt in SecurityTestHarness File). 
 The function SimpleKeySensitivityEncrypt && SimpleKeySensitivityDecrypt is the whole PoorMan’s Security Algorithm.
 
-CAUTION: As PoorMan’s Security Algorithm is a new software, Users and user community are advised caution to Test and Check thoroughly and only then use PoorMan’s Security Algorithm in PRODUCTION.
-The purpose of the release to public domain is the gather invaluable user feedback and comments on the software.
+The PoorMan’s Security Algorithm is being released as a Freeware and OpenSource Software (But NOT as PUBLIC DOMAIN Software). Users are encouraged to download and configure their own requirements.
 
+CAUTION: As PoorMan’s Security Algorithm is a new software, Users and user community are advised caution to Test and Check thoroughly and only then use PoorMan’s Security Algorithm in PRODUCTION.
+
+The purpose of the release to public is to gather invaluable user feedback and comments on the software.
 2. Packages
     a) JavaCalculus
     b) RandomNumber
@@ -25,6 +27,18 @@ Using Netbeans 8.2,
     2) Right Click
     3) Select Run File
 
+As a Chat Application
+        ◦ Sender Receiver Mode
+Using Netbeans 8.2, Start Receiver Frist
+    4) Open Receiver.java. 
+    5) Right Click
+    6) Select Run File
+Using Netbeans 8.2, Start Sender Second
+    7) Open Sender.java. 
+    8) Right Click
+    9) Select Run File
+
+Note: Program does not work if Sender is started first instead of Receiver
 
 #Forming the Project Folder:
 i.	Create data directory
